@@ -3,7 +3,7 @@ package prog3.arbol.binario.util;
 import prog3.arbol.binario.ArbolBinario;
 import prog3.util.ColaGenerica;
 
-public class RecorridoArbolBinario<T> {
+public class RecorridosArbolBinario<T> {
 
 	public void imprimirPreOrder(ArbolBinario<T> aBinario) {
 		System.out.print(aBinario.getDatoRaiz() + ", ");
