@@ -4,7 +4,7 @@ import prog3.arbol.general.ArbolGeneral;
 import prog3.listagenerica.ListaGenericaEnlazada;
 import prog3.util.ColaGenerica;
 
-public class RecorridoArbolGeneral<T> {
+public class RecorridosArbolGeneral<T> {
 
 	public static <T> void recorridoPreOrder(ArbolGeneral<T> a) {
 		if (!a.esVacio()) {
