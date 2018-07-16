@@ -9,8 +9,8 @@ public class Dijkstra<T> {
 	
 	public static <T> void dijkstraSinHeap (Grafo<T> grafo, Vertice<T> v){ //v = Origen
 		
-		int[] vDist = new int[grafo.listaDeVertices().tamanio()]; // Costos minimos para acceder al vertice
-		int[] vAnt = new int[grafo.listaDeVertices().tamanio()]; // Posiciones de los vertices por los cuales hay que pasar previamente para acceder a un vertice determinado
+		int[] vDist = new int[grafo.listaDeVertices().tamanio()]; // Costos mínimos para acceder al vértice
+		int[] vAnt = new int[grafo.listaDeVertices().tamanio()]; // Posiciones de los vértices por los cuales hay que pasar previamente para acceder a un vértice determinado
 		boolean[] vConocido = new boolean[grafo.listaDeVertices().tamanio()];
 		
 		for (int i = 0; i < grafo.listaDeVertices().tamanio(); i++)
