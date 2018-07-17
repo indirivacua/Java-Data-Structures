@@ -55,17 +55,14 @@ public class Heap<T extends Comparable<T>> {
 		boolean stop = false;
 		while (((i * 2) <= cantElementos) && (!stop)) {
 			int hijoMaximo = i * 2;
-			if (hijoMaximo != this.cantElementos) {
-				if (datos[hijoMaximo + 1].compareTo(datos[hijoMaximo]) < 0) {
+			if (hijoMaximo != this.cantElementos)
+				if (datos[hijoMaximo + 1].compareTo(datos[hijoMaximo]) < 0)
 					hijoMaximo++;
-				}
-			}
 			if (elem.compareTo(datos[hijoMaximo]) > 0) {
 				datos[i] = datos[hijoMaximo];
 				i = hijoMaximo;
-			} else {
+			} else
 				stop = true;
-			}
 		}
 		this.datos[i] = elem;
 	}
