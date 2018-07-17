@@ -72,7 +72,7 @@ public class RecorridosGrafos<T> {
 	}
 	
 	//Es utilizado normalmente para resolver problemas con circunstancias que se expanden a lo largo del grafo, 
-	//y no es posible resolverlo avanzando de manera lineal (como lo haría un DFS)
+	//y no son posibles resolverlas avanzando de manera lineal (como lo haría un DFS)
 	public ListaGenerica<Vertice<T>> bfs(Grafo<T> grafo){
 		ListaGenerica<Vertice<T>> vertices = new ListaGenericaEnlazada<Vertice<T>>();
 		
