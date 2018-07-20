@@ -71,10 +71,12 @@ public class Heap<T extends Comparable<T>> {
 		return this.cantElementos == 0;
 	}
 
-	public void getDatos() {
+	public void imprimir() {
 		for (int i = 1; i <= this.cantElementos; i++)
-			System.out.print(this.datos[i] + ", ");
-		System.out.println("cantElem: " + this.cantElementos);
-		System.out.println("esVacia: " + this.esVacia());
+			if (i != this.cantElementos)
+				System.out.print(this.datos[i] + ", ");
+			else
+				System.out.print(this.datos[i]);
+		System.out.println();
 	}
 }
